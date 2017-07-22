@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="항목 검색"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/etSearchTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="61dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/searchListView"
+        android:layout_width="match_parent"
+        android:layout_height="352dp" />
+
+    <Button
+        android:id="@+id/btnSearchCancel"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="onClick"
+        android:text="cancel" />
+
+</LinearLayout>
