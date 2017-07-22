@@ -75,7 +75,7 @@ public class Menu3Activity extends AppCompatActivity {
                 intent.putExtra("star", selectedData.getStar());
                 intent.putExtra("content", selectedData.getContent());
                 intent.putExtra("review", selectedData.getReview());
-                startActivity(intent);//선택한 항목 인텐트로 던지기
+                startActivity(intent);//선택 항목 인텐트로 던지기
             }
         });
     }
